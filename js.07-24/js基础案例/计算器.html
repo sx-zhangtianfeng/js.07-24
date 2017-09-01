@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<input id="result" value="" />
+		<hr />
+		<input name="num" value="1" type="button" />
+		<input name="num" value="2"type="button" />
+		<input name="num" value="3" type="button"/>
+		<hr />
+		<input id="calcu" value="=" type="button"/>
+		
+	</body>
+</html>
+
+<script>
+	
+	var nums = document.getElementsByName("num");
+	
+	for(var i = 0 ; i < nums.length ; i++) {
+		nums[i].onclick = function(){
+			console.log(this.value)
+		}
+	}
+	
+	
+	var calcu = document.getElementById("calcu");
+	calcu.onclick = function(){
+		var result = document.getElementById("result");
+//		result.innerHTML ="5"
+		result.value = 5
+	}
+	
+	
+	
+</script>
